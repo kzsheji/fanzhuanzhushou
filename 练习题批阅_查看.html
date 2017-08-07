@@ -1,0 +1,414 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>练习题批阅</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet">
+
+ <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!---------------------------------------------顶部--------------------------------------------------->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  	<div class="container-fluid">
+	    <div class="navbar-header">
+		    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sidebar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+		    <a class="navbar-brand" href="#"><img src="img/logo.png" alt=""/><span>翻转助手</span></a>
+		    <ul class="user-menu">
+		        <li class="dropdown pull-right"> <a href="#">返回网站首页</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> 您好！admin<span class="caret"></span></a>
+		          <ul class="dropdown-menu" role="menu">
+		            <!--<li><a href=""><span class="glyphicon glyphicon-user"></span>账户管理</a></li>-->
+		            <li><a href="#"><span class="glyphicon glyphicon-log-out"></span>退出登录</a></li>
+		          </ul>
+		        </li>
+		    </ul>
+	    </div>
+  	</div>
+</nav>
+<!---------------------------------------------顶部结束--------------------------------------------------->
+<!---------------------------------------------左侧列表--------------------------------------------------->
+<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
+<div role="search"></div>
+  <div class="sidebar-menu">
+    	<nav id="menu" class="nav-main leftsidebar" role="navigation">
+	<ul class="leftsidebar-yiji">
+        <li class="yiji"><a href="知识点管理.html" class="white"><img src="img/icon_01.png" alt="知识点管理"/>知识点管理</a></li>
+		<li  class="yiji"><a href="发布导学教案.html" class="white"><img src="img/icon_02.png" alt="发布导学案"/>发布导学案</a></li>
+        <li class="yiji"><a href="我的导学案.html" class="white"><img src="img/icon_03.png" alt="我的导学案"/>我的导学案</a></li>
+        <li class="yiji"><a href="练习题批阅.html" class="white"><img src="img/icon_04.png" alt="练习题批阅"/>练习题批阅</a></li>
+        <li class="yiji"><a href="视频课件录制.html" class="white"><img src="img/icon_05.png" alt="视频课件库"/>视频课件库</a></li>
+        <li class="yiji"><a href="#" class="white inactive"><img src="img/icon_06.png" alt="题库管理"/>题库管理</a>
+			<ul style="display: none">
+				<li><a href="单选题管理.html">单选题管理</a></li> 
+                <li><a href="多选题管理.html">多选题管理</a></li> 
+                <li><a href="判断题管理.html">判断题管理</a></li> 
+                <li><a href="填空题管理.html">填空题管理</a></li> 
+                <li><a href="简答题管理.html">简答题管理</a></li> 
+			</ul>
+        </li>
+        <li class="yiji"><a href="#" class="white inactive"><img src="img/icon_07.png" alt="有问有答"/>有问有答</a>
+			<ul style="display: none">
+				<li><a href="与我相关.html">与我相关</a></li> 
+                <li><a href="全部问题.html">全部问题</a></li> 
+                <li><a href="精华问题.html">精华问题</a></li> 
+			</ul>
+        </li>
+        <li class="yiji"><a href="学习统计.html" class="white"><img src="img/icon_08.png" alt="学习统计"/>学习统计</a></li>
+        <li class="yiji"><a href="http://edu.kuanzheng.net/user/defaultclient.aspx" class="white"><img src="img/icon_09.png" alt="手机客户端下载"/>手机客户端下载</a></li>
+         <li class="yiji"><a href="http://edu.kuanzheng.net/download/kuanzheng.exe" class="white"><img src="img/icon_10.png" alt="视频客户端下载"/>视频客户端下载</a></li>
+	</ul>
+	    </nav>
+  </div>
+</div>
+<!--/.sidebar-->
+<!---------------------------------------------左侧列表结束----------------------------------------------->
+<!---------------------------------------------右侧内容--------------------------------------------------->
+<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
+  <div class="row">
+    <ol class="breadcrumb">
+      <li><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
+      <li class="active">练习题批阅</li>
+    </ol>
+  </div>
+  
+  <!--/.row-->
+  <div class="row" style="margin-top:10px;">
+    <div class="col-lg-12">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+            <i></i>  
+        	<span>查看作业</span>
+        	<a href="练习题批阅.html" class="btn btn-default ml15" style="float: right;">&nbsp;返回&nbsp;</a>
+        	<div class="tabPanel">
+        		<ul>
+			        <li class="hit">按照交卷人员查看</li>
+			        <li>按照班级查看</li>
+                    <li>按照试题查看</li>
+        		</ul>
+        	
+        </div></div>
+        <div class="panes">
+        <div class="panel-body pane" style="display:block;">
+				<!-- 表格 开始 ------------------------------------------->
+				<table cellpadding="1" cellspacing="1" class="component">
+					<thead>
+						<tr class="component_tit">
+							<th>序号</th>
+							<th>学生姓名</th>
+							<th>作业名称</th>
+							<th>作业时间</th>
+                            <th>查看状态</th>
+                            <th>删除答卷</th>
+                            <th>点击查看</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="component_con">
+                            <td>1</td>
+							<td>张章</td>
+							<td align="left">语文——我的叔叔于勤导学案623的练习题</td>
+                            <td>2017-07-26 14:22:16</td>
+							<td>已查看</td>
+							<td>
+								<a href="#" class="del">删除答卷</a>
+							</td>
+							<td>
+								<a href="练习题批阅_查看作业.html" class="orange">点击查看</a>
+							</td>
+						</tr>
+						<tr class="component_con">
+                            <td>2</td>
+							<td>王洋</td>
+							<td align="left">语文——我的叔叔于勤导学案623的练习题</td>
+                            <td>2017-07-26 14:22:16</td>
+							<td>未查看</td>
+							<td>
+								<a href="#" class="del">删除答卷</a>
+							</td>
+							<td>
+								<a href="练习题批阅_查看作业.html" class="orange">点击查看</a>
+							</td>
+						</tr>
+                        
+                        
+					</tbody>
+				</table>
+			<div class="page mt20">
+				<a href="" class="non">首页</a>&nbsp;
+				<a href="" class="non">上一页</a>&nbsp;
+				<a href="">1</a>&nbsp;&nbsp;
+				<a href="" class="act">2</a>&nbsp;
+				<a href="">下一 页</a>&nbsp;
+				<a href="">末页</a>
+				<input name="" class="">
+				<a href="" class="go">GO</a>
+				&nbsp;&nbsp;共2页&nbsp;&nbsp;共4条记录
+			</div>
+        </div>
+        <div class="panel-body pane">
+        	                <div class="pane_choose"><span>班级选择:</span>
+							<div class="col-sm-2 tab-btn">
+								<select name="" class="form-control" id="type">
+									<option value="0">请选择班级...</option>
+									<option value="1">2015届1班</option>
+									<option value="2">2016届1班</option>
+									<option value="3">2017届1班</option>
+								</select>
+							</div></div>
+							
+			            <div class="pane_banji">
+                            <ul>
+                                <li>赵成 <span>（未提交） </span></li>
+                                <li>苗忠灵 <span>（已提交） </span></li>
+                                <li>贺文忠 <span>（未提交） </span></li>
+                                <li>赵成 <span>（未提交） </span></li>
+                                <li>贺文忠 <span>（未提交） </span></li>
+                                <li>赵成 <span>（未提交） </span></li>
+                                <li>苗忠灵 <span>（未提交） </span></li>
+                                <li>贺文忠 <span>（未提交） </span></li>
+                                <li>赵成 <span>（未提交） </span></li>
+                                <li>贺文忠 <span>（未提交） </span></li>
+                                <li>赵成 <span>（未提交） </span></li>
+                                <li>苗忠灵 <span>（未提交） </span></li>
+                                <li>贺文忠 <span>（未提交） </span></li>
+                                <li>赵成 <span>（未提交） </span></li>
+                                <li>贺文忠 <span>（未提交） </span></li>
+                                <li>赵成 <span>（未提交） </span></li>
+                                <li>苗忠灵 <span>（未提交） </span></li>
+                                <li>贺文忠 <span>（未提交） </span></li>
+                                <li>赵成 <span>（未提交） </span></li>
+                                <li>贺文忠 <span>（未提交） </span></li>
+                            </ul> 
+                        </div> 
+							
+        </div>
+        <div class="panel-body pane">
+				<!-- 表格 开始 ------------------------------------------->
+<div class="fixed-table-container">
+	            <div class="fixed-table-body">
+		              <table class="table table-hover" >
+		                <thead>
+		                  <tr>
+		                    <th width="100" align="center" style="">
+		                    	<div style="text-align:center;">序号</div>
+		                    </th>
+                            <th width="800" align="center" style="">
+		                    	<div style="text-align:center;">一、单选题</div>
+		                    </th>
+		                    <th width="100" align="center" style="">
+		                    	<div style="text-align:center;">操作</div>
+		                    </th>
+		                  </tr>
+		                </thead>
+		                <tbody>
+		                  	<tr data-index="0">
+			                    <td align="center">1</td>
+			                    <td align="left">端午节是纪念谁的  [A]</td>
+			                    <td align="center"><a href="练习题批阅_单选题.html" class="orange">点击查看</a></td>
+		                  	</tr>
+		                  	<tr data-index="1">
+			                    <td align="center" style="">2</td>
+			                    <td align="left">重庆的重的读音  [B]</td>
+			                    <td align="center"><a href="练习题批阅_单选题.html" class="orange">点击查看</a></td>
+		                  	</tr>
+		                  </tbody>
+		              </table>
+                      
+		              <table class="table table-hover">
+		                <thead>
+		                  <tr>
+		                    <th width="100" align="center" style="">
+		                    	<div style="text-align:center;">序号</div>
+		                    </th>
+                            <th width="800" align="center" style="">
+		                    	<div style="text-align:center;">二、多选题</div>
+		                    </th>
+		                    <th width="100" align="center" style="">
+		                    	<div style="text-align:center;">操作</div>
+		                    </th>
+		                  </tr>
+		                </thead>
+		                <tbody>
+		                  	<tr data-index="0">
+			                    <td align="center">1</td>
+			                    <td align="left">易错点 [BC]</td>
+			                    <td align="center"><a href="练习题批阅_多选题.html" class="orange">点击查看</a></td>
+		                  	</tr>
+		                  </tbody>
+		              </table>
+                      
+                      <table class="table table-hover" >
+		                <thead>
+		                  <tr>
+		                    <th width="100" align="center" style="">
+		                    	<div style="text-align:center;">序号</div>
+		                    </th>
+                            <th width="800" align="center" style="">
+		                    	<div style="text-align:center;">三、判断题</div>
+		                    </th>
+		                    <th width="100" align="center" style="">
+		                    	<div style="text-align:center;">操作</div>
+		                    </th>
+		                  </tr>
+		                </thead>
+		                <tbody>
+		                  	<tr data-index="0">
+			                    <td align="center">1</td>
+			                    <td align="left">奥运会第一天，中国队上午获得m枚金牌，下午获得n枚金牌，这一天共获得mn枚金牌。[正确]</td>
+			                    <td align="center"><a href="练习题批阅_判断题.html" class="orange">点击查看</a></td>
+		                  	</tr>
+		                  	<tr data-index="1">
+			                    <td align="center" style="">2</td>
+			                    <td align="left">李白是宋代的？ [错误]</td>
+			                    <td align="center"><a href="练习题批阅_判断题.html" class="orange">点击查看</a></td>
+		                  	</tr>
+		                  </tbody>
+		              </table>
+                      
+                      <table class="table table-hover">
+		                <thead>
+		                  <tr>
+		                    <th width="100" align="center" style="">
+		                    	<div style="text-align:center;">序号</div>
+		                    </th>
+                            <th width="800" align="center" style="">
+		                    	<div style="text-align:center;">四、填空题</div>
+		                    </th>
+		                    <th width="100" align="center" style="">
+		                    	<div style="text-align:center;">操作</div>
+		                    </th>
+		                  </tr>
+		                </thead>
+		                <tbody>
+		                  	<tr data-index="0">
+			                    <td align="center">1</td>
+			                    <td align="left">请问:世界上有 <input name="" class="tiankong" value="星星"></input>？</td>
+			                    <td align="center"><a href="练习题批阅_填空题.html" class="orange">点击查看</a></td>
+		                  	</tr>
+		                  	<tr data-index="1">
+			                    <td align="center" style="">2</td>
+			                    <td align="left">如何培养大方自信的孩 <input name="" class="tiankong" value="美丽"></input>？</td>
+			                    <td align="center"><a href="练习题批阅_填空题.html" class="orange">点击查看</a></td>
+		                  	</tr>
+		                  </tbody>
+		              </table>
+                      
+                      <table class="table table-hover" style="margin-bottom: 0px;" >
+		                <thead>
+		                  <tr>
+		                    <th width="100" align="center" style="">
+		                    	<div style="text-align:center;">序号</div>
+		                    </th>
+                            <th width="800" align="center" style="">
+		                    	<div style="text-align:center;">五、简答题</div>
+		                    </th>
+		                    <th width="100" align="center" style="">
+		                    	<div style="text-align:center;">操作</div>
+		                    </th>
+		                  </tr>
+		                </thead>
+		                <tbody>
+		                  	<tr data-index="0">
+			                    <td align="center">1</td>
+			                    <td align="left">方程与等式有什么关系？ <br/>
+                                <textarea class="form-control" rows="2" >方程关系</textarea></td>
+                                <td align="center"><a href="练习题批阅_简答题.html" class="orange">点击查看</a></td>
+		                  	</tr>
+		                  	<tr data-index="1">
+			                    <td align="center" style="">2</td>
+			                    <td align="left">用字母表示数有哪些优越性？<br/>
+                                <textarea class="form-control" rows="2" >简单易懂</textarea> </td>
+                                <td align="center"><a href="练习题批阅_简答题.html" class="orange">点击查看</a></td>
+		                  	</tr>
+		                  </tbody>
+		              </table>
+                       
+	            </div>
+</div>
+				
+				
+       </div>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!--/.row-->
+  <div class="row">
+    <div class="footer">技术支持：淄博宽正数码网络科技有限公司 </div>
+  </div>  
+  
+  
+</div>
+<!--/.main-->
+
+<!---------------------------------------------右侧内容结束--------------------------------------------------->
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!--<script src="assets/js/jquery.mmenu.min.js"></script>
+<script src="js/bootstrap-table.js"></script>-->
+<script src="js/layer/layer.js"></script>
+<script>
+
+		//列表选择
+		$(".leftsidebar li>a").click(function() {
+			$(".leftsidebar li>a").removeClass("aClick");
+			$(this).toggleClass("aClick")
+		})
+
+		$(document).ready(function() {
+			$('.inactive').click(function() {
+				if($(this).siblings('ul').css('display') == 'none') {
+					$(this).parent('li').siblings('li').removeClass('inactives');
+					$(this).addClass('inactives');
+					$(this).siblings('ul').slideDown(100).children('li');
+					//if($(this).parents('li').siblings('li').children('ul').css('display') == 'block') {
+						$(this).parents('li').siblings('li').children('ul').parent('li').children('a').removeClass('inactives');
+						$(this).parents('li').siblings('li').children('ul').slideUp(100);
+
+					//}
+				} else {
+					//控制自身变成+号
+					$(this).removeClass('inactives');
+					//控制自身菜单下子菜单隐藏
+					$(this).siblings('ul').slideUp(100);
+					//控制自身子菜单变成+号
+					$(this).siblings('ul').children('li').children('ul').parent('li').children('a').addClass('inactives');
+					//控制自身菜单下子菜单隐藏
+					$(this).siblings('ul').children('li').children('ul').slideUp(100);
+
+					//控制同级菜单只保持一个是展开的（-号显示）
+					$(this).siblings('ul').children('li').children('a').removeClass('inactives');
+				}
+			})
+		});
+		
+
+				<!-- 隔行变色js --->
+					function bgChange() {
+						var lis = $(".component tr");
+						for(var i = 2; i < lis.length; i += 2)
+							lis[i].style.background = '#edf3ff';
+					}
+					window.onload = bgChange;
+	
+$(function(){	
+	$('.tabPanel ul li').click(function(){
+		$(this).addClass('hit').siblings().removeClass('hit');
+		$('.panes>div:eq('+$(this).index()+')').show().siblings().hide();	
+	})
+})
+
+</script>	
+</body>
+</html>

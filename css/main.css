@@ -1,0 +1,173 @@
+.mt5 { margin-top:5px;}
+.mt20 { margin-top:20px;}
+.ml20 { margin-left:20px;}
+.ml15 { margin-left:15px;}
+.mb20 { margin-bottom:20px;}
+.mlr10 { margin:0 10px;}
+.pt7 { padding-top:7px;}
+em,i{font-style: normal;}
+
+.footer { background:#f0f3f6; color:#999; text-align:center; padding:10px 0; position:fixed; bottom:0px;    width: 83.33333333%;}
+
+
+/**左侧导航**/
+.leftsidebar {width: 100%; text-align:left; }
+.leftsidebar li{list-style-type: none;}
+.leftsidebar li .aClick {background:#f3f4f9; border-left:6px solid #3ca0ec}
+.leftsidebar .yiji{ line-height:70px; font-size:16px;}
+.leftsidebar .yiji a{ color:#4e5486; text-decoration:none}
+.leftsidebar .yiji img{ padding:0 20px;}
+.leftsidebar .yiji .white{ color:#4e5486}
+.leftsidebar  ul{overflow:hidden; padding:0; margin:0}
+.leftsidebar  ul li:hover{ background:e0ccb0;}
+.leftsidebar  ul li a:hover{}
+.leftsidebar  ul li a{color:#8a6748; display: block; font-weight:bold; padding-left:10px;}
+.leftsidebar  ul li .inactive{ background:url(../img/off.png) no-repeat 240px center;}
+.leftsidebar  ul li .inactives{background:url(../img/on.png) no-repeat 240px center;} 
+.leftsidebar  ul li ul{display: none; overflow:hidden;}
+.leftsidebar  ul li ul li { border-left:0; border-right:0; background:#e2f2ff;}
+.leftsidebar  ul li ul li ul{display: none;  overflow:hidden}
+.leftsidebar  ul li ul li a{font-size:14px; line-height:50px; color:#8a6748; padding-left:100px; border-bottom:1px dotted #FFFFFF}
+.leftsidebar  ul li ul li ul li { background-color:#e6e4e3;   }
+.leftsidebar  ul li ul li ul li a{ color:#7b5427;  font-size:14px; line-height:30px;border-bottom: none;}
+
+/**发布导学教案**/
+textarea { max-width:1000px;}
+.btn-zhishi { background:#414654; margin-bottom:20px; border-radius:0px; border:0px;}
+.btn-zhishi:hover { background:#5a5f70;}
+.btn-zhishi:visited { background:#5a5f70;}
+#knowledge{overflow:hidden; display:none}
+#knowledge .search{ width:100%; overflow:hidden}
+#knowledge .multiple{background-color: #FCFCFC;font-size:12px;height:220px;width:200px; float:left; border:1px solid #E1E1E1; margin:20px 0 0 20px; padding:10px;}
+#knowledge .btn_group {font-size:12px;height:220px;width:70px; float:left; margin:20px 0 0 20px; padding:10px;}
+.tips { margin:20px 0 0 0;}
+.tips span{ color:#F60}
+.tar{ text-align:right}
+
+.automatic { background:#F9F9F9; border:1px solid #EEE; padding:20px;}
+.automatic span { color:#F60}
+.tiankong { border:none; border-bottom:1px solid #CCC; background: none;}
+
+
+/* 表格 */
+.component{ width:100%;  border:solid 1px #E8E8E8; font-size:14px; text-align:center; color:#5f6468; }
+.component a{ color:#5f6468}
+.component_tit{ height:50px; background:#3ca0ec; color:#FFF}
+.component_con{ height:40px;}
+.component_con i{ font-style: normal; background: #3ca0ec; color: #FFF; padding: 0 5px; margin-right: 10px; border-radius: 3px;}
+.component th{font-weight:normal; text-align:center;}
+.component td{}
+.component span{ display:block; width:100%; height:100%}
+.component .orange{ color:#F60}
+.orange{ color:#F60}
+.orange:hover{ color:#F60}
+.orange:visited{ color:#F60}
+
+/* Page */
+
+.page {text-align: right;font-size: 14px;padding: 30px 0;margin-bottom: 5px;color: #333438;}
+.page a {display: inline-block; padding: 3px 7px;border: #ccc solid 1px;color: #3ca0ec;font-size: 14px;}
+.page a.non {color: #3ca0ec;}
+.page a.act {color: #FFF;background: #3ca0ec;}
+.page a:hover {background-color: #3ca0ec;color: #FAFAFA;}
+.page input {border: #ccc solid 1px; width: 30px; padding: 3px; text-align: center; border-radius: 3px; margin: 0 3px;}
+.page .go {color: #FFF;background: #3ca0ec; border: none; border-radius: 3px; }
+
+/* 知识点管理*/
+.zhishi_tit {border: 0;margin-left: 5px;
+    -moz-box-shadow: 5px 5px 5px #cbd5dc;
+    -webkit-box-shadow: 5px 5px 5px #cbd5dc;
+    box-shadow: 5px 5px 5px #cbd5dc;
+    background-color: #fff;
+	overflow:hidden
+}
+.zhishi_tit span { display:block; line-height:60px; background:#3ca0ec; color:#FFF; width:10%; float:left; text-align:center; font-size:16px;}
+.zhishi_tit em { display:block; width:90%; float:left; font-style:normal}
+.zhishi_tit em input{ margin-top:13px}
+.zhishi_tit .zhishi_btn{ text-align:right}
+.zhishi_tit .zhishi_btn a{ margin-top:13px}
+
+/* 视频课件录制*/
+.icon{ text-align:center; margin-top:40px;}
+.courseware .tips{ }
+.courseware span{ color:#F60 }
+
+/* 题库管理*/
+.CheckboxGroup1{ margin: 7px 0 0 0;}
+.CheckboxGroup1 label{ margin:0 20px 0 0;}
+
+/* 有问有答*/
+.question { margin: 0 0 20px 0;}
+.question .icon{ text-align: right;}
+.question .icon span { background: #4ea6ed; color: #fff; padding: 5px 6px;}
+.question .wen{ background: #edf3ff; border-radius: 5px; min-height: 100px;}
+.question .wen span{ padding: 15px 0; border-bottom: 1px solid #FFF;}
+.question .wen em{ padding: 15px 0; font-style: normal;}
+.question .wen i{ float: right;}
+
+/* 学习统计*/
+.result{ display:none; }
+.result li{ float:left; margin:10px; }
+.result li span{ color:#F60}
+.situation tbody tr{ border-bottom:1px solid #EEE}
+
+/* 练习题批阅*/
+/**tabs**/
+.tabPanel{ overflow: hidden;}
+.tabPanel ul{ float: right; font-size: 14px;}
+.tabPanel ul li{float:left;margin:0 0px 0 15px;background:#edeff4; color: #2e2e2e; height: 35px; line-height: 35px; padding: 0 10px; border-radius: 3px; cursor: pointer;}
+.tabPanel .hit{margin:0 0px 0 15px;background:#3ca0ec; color: #FFF; }
+.pane{display:none}
+.pane_choose{ overflow: hidden;}
+.pane_choose span{ float: left; line-height: 35px;}
+.pane_banji{ width: 100%; background: #f8f8f8; padding: 10px; margin: 20px 0 0 0;overflow: hidden;}
+.pane_banji li{ float: left; text-align: center; margin: 0 20px 20px 0;}
+.pane_banji li span{ color: #F60; display: block; }
+
+
+/*考题*/
+.question_types {width:100%; padding:10px 20px; font-size:16px; background:#dee7ef;margin-bottom:20px; }
+
+.answerCenter {background:#fff; width:100%;border:1px solid #d6d6d6;height:auto;margin-bottom:20px;overflow:hidden;}
+.answerCenter ul { margin-bottom: 20px;}
+.answer_tit {width:100%; background:#fafafa; overflow:hidden; line-height:30px; padding:10px 0;}
+.answerCenter .title {float:left;color:#3ca0ec;display:block;font-size:14px;text-align:center;width:55px;font-size:30px;}
+.font-c {float:left;color:#3ca0ec;margin:0 8px 0 0; line-height:30px;}
+.topic {float:left;width:90%;line-height:30px;}
+.answerCenter input {width: 200px;border: none;border-bottom: #3ca0ec 1px solid;padding: 0 5px;}
+.answerCenter textarea {width: 95%;min-width: 650px;max-width: 95%;height: 60px;border: #3ca0ec 1px solid;
+    -moz-box-shadow: 1px 3px 3px #eee inset;
+    -webkit-box-shadow: 1px 3px 3px #eee inset;
+    box-shadow: 1px 3px 3px #eee inset;
+    padding: 10px;}
+.answer_tips{ padding: 20px;background:#fafafa;}
+.answer_tips span{ margin-right: 20px;}
+.answer_tips .red{ color: red;}
+.answer_tips .green{ color: green;}
+.M_selectBox li{ margin: 10px 0 0 0;}
+.answer_student{ padding: 20px;background:#fafafa;overflow: hidden;}
+.answer_student em{ float: left; display: block;width: 10%;}
+.answer_student ul{float: left; padding: 0px; width: 90%;margin-bottom: 0px;}
+.answer_student li{ margin: 0 0 20px 20px; float: left; text-align: center;}
+.answer_student span{ color: #F60; display: block; }
+.answer_student i{ color: #F60; }
+.jianda li{float:none; text-align: left;}
+
+.checkList li{padding:10px; padding-left:40px; height:40px; line-height:40px; margin-top:3px; font-size:16px; cursor: pointer; }
+.checkList li img{ width:20px; height:20px; margin-top:0px;}
+.checkList li i{ display: block; cursor: pointer; float:left; width:5%;}
+.checkList li em{ float:left; width:5%;font-style: normal;}
+.checkList li span{ float:left; width:90%; }
+.secCheck i{ float: left; margin-right: 10px; margin-bottom: 10px; }
+
+/*试卷标题*/
+.exam_title_bj{width: 100%; background: #fff; overflow: hidden;}
+.exam_title {margin:20px auto; border:1px solid #d6d6d6; overflow:hidden; padding:20px; font-size: 18px;}
+.exam_title img{ margin: 0 20px 0 0;}
+.exam_submit{ padding: 5px 30px; float: right;}
+.mt110{ margin-top: 110px;}
+.exam_tips{ padding: 0 0 20px 0;}
+.exam_footer { background:#f0f3f6; color:#999; text-align:center; padding:10px 0;  width: 100%;}
+
+
+
